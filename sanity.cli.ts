@@ -5,4 +5,5 @@ export default defineCliConfig({
     projectId: 'w804yga0',
     dataset: 'production',
   },
+  studioHost: 'ambuyo',
 })
