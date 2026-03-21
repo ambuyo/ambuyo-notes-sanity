@@ -34,7 +34,8 @@ export default defineConfig({
           ]),
     }),
     visionTool(),
-    seofields(),
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    seofields({ licenseKey: 'SEOF-752C-7588-73FF' } as any),
   ],
 
   schema: {
