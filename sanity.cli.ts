@@ -6,4 +6,7 @@ export default defineCliConfig({
     dataset: 'production',
   },
   studioHost: 'ambuyo',
+  deployment: {
+    appId: 'r4ysvlnqak6ohvxs96bmmyya',
+  },
 })
