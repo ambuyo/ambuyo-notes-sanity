@@ -73,6 +73,11 @@ export default defineType({
       type: 'boolean',
       initialValue: false,
     }),
+    defineField({
+      name: 'seo',
+      title: 'SEO & Social',
+      type: 'seo',
+    }),
   ],
   preview: {
     select: { title: 'title', media: 'coverImage', subtitle: 'sector' },
