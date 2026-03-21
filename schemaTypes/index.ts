@@ -1,4 +1,6 @@
-import blogPost from '../schemas/blogPost'
-import project from '../schemas/project'
+import blockContent from './blockContent'
+import author from './author'
+import post from './post'
+import caseStudy from './caseStudy'
 
-export const schemaTypes = [blogPost, project]
+export const schemaTypes = [blockContent, author, post, caseStudy]

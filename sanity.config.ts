@@ -10,7 +10,30 @@ export default defineConfig({
   projectId: 'w804yga0',
   dataset: 'production',
 
-  plugins: [structureTool(), visionTool()],
+  plugins: [
+    structureTool({
+      structure: (S) =>
+        S.list()
+          .title('Content')
+          .items([
+            S.listItem()
+              .title('Portfolio')
+              .child(S.documentTypeList('caseStudy').title('Case Studies')),
+            S.divider(),
+            S.listItem()
+              .title('Editorial')
+              .child(
+                S.list()
+                  .title('Blog Management')
+                  .items([
+                    S.documentTypeListItem('post').title('All Posts'),
+                    S.documentTypeListItem('author').title('Authors'),
+                  ])
+              ),
+          ]),
+    }),
+    visionTool(),
+  ],
 
   schema: {
     types: schemaTypes,
